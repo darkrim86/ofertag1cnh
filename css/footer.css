@@ -2,6 +2,12 @@
 .content-ads {
     display: none;
 }
+#mais-lidas {
+    display: none;
+}
+#newsletter-g1-modal__container {
+    display: none;
+}
 .glbbarrawidget {
     display: none;
 }
