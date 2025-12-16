@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "reportagem.globo.html",
+      "permanent": false
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+/* Footer Base Styles */
+.content-ads {
+    display: none;
+}
+.glbbarrawidget {
+    display: none;
+}
+.footer {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 1rem 0.75rem; /* Reduzido o padding */
+  background-color: #333;
+  color: #fff;
+  font-size: 0.75rem; /* Fonte menor */
+}
+#banner_vitrine {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+#menu-container {
+    display: none;
+}
+/* Row and Column Layout */
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.column.small-24 {
+  width: 100%;
+}
+
+/* Diretorio Section */
+.diretorio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; /* Reduzido */
+  gap: 0.5rem; /* Menor gap */
+}
+
+.diretorio__esquerda {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem; /* Reduzido */
+}
+
+.diretorio__logos {
+  display: flex;
+  align-items: center;
+}
+
+.diretorio__logos__logo {
+  flex-shrink: 0;
+  height: 24px !important; /* Tamanho menor para mobile */
+  width: 24px !important;
+}
+
+.diretorio__logos__logo a {
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.diretorio__logos__logo a:hover {
+  opacity: 0.8;
+}
+
+.diretorio__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* Menor espaçamento */
+}
+
+.diretorio__links--break-line {
+  flex-wrap: wrap;
+}
+
+.diretorio__links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 500;
+  font-size: 0.75rem; /* Fonte menor */
+}
+
+.diretorio__links a:hover {
+  color: #ccc;
+}
+
+.diretorio__direita {
+  text-align: right;
+}
+
+.diretorio__audience {
+  font-weight: bold;
+  font-size: 0.875rem; /* Reduzido */
+  color: #fff;
+}
+
+/* Service Section */
+.footer__service {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem; /* Reduzido */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem; /* Menor gap */
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.7rem; /* Menor */
+  line-height: 1.3;
+}
+
+.footer__service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* Menor espaçamento */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__service-list-item {
+  margin: 0;
+}
+
+.footer__service-list-item a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 0.7rem; /* Menor */
+  white-space: nowrap; /* Evita quebra de linha */
+}
+
+.footer__service-list-item a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Ajustes específicos para mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding: 0.75rem 0.5rem; /* Ainda mais compacto */
+  }
+  
+  .diretorio {
+    flex-direction: row; /* Mantém em linha se possível */
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .diretorio__esquerda {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+  }
+  
+  .diretorio__logos__logo {
+    height: 20px !important;
+    width: 20px !important;
+  }
+  
+  .diretorio__links {
+    gap: 0.25rem;
+  }
+  
+  .diretorio__links a {
+    font-size: 0.7rem;
+  }
+  
+  .diretorio__direita {
+    text-align: right;
+    font-size: 0.7rem;
+  }
+  
+  .diretorio__audience {
+    font-size: 0.75rem;
+  }
+  
+  .footer__service {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 0.75rem;
+  }
+  
+  .footer__copyright {
+    order: 2; /* Coloca o copyright por último */
+    width: 100%;
+    text-align: center;
+    margin-top: 0.25rem;
+    font-size: 0.65rem;
+  }
+  
+  .footer__service-list {
+    order: 1; /* Links primeiro */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  
+  .footer__service-list-item a {
+    font-size: 0.65rem;
+  }
+}
+
+/* Para telas muito pequenas */
+@media (max-width: 480px) {
+  .footer {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+  
+  .diretorio {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .diretorio__esquerda {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .diretorio__links {
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.25rem;
+  }
+  
+  .diretorio__direita {
+    width: 100%;
+    text-align: center;
+    font-size: 0.65rem;
+  }
+  
+  .diretorio__audience {
+    font-size: 0.7rem;
+  }
+  
+  .footer__service {
+    padding-top: 0.5rem;
+  }
+  
+  .footer__service-list {
+    gap: 0.35rem;
+  }
+  
+  .footer__service-list-item a {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.2rem;
+  }
+  
+  .footer__copyright {
+    font-size: 0.6rem;
+    line-height: 1.2;
+  }
+}
+
+/* Para telas extremamente pequenas (menos de 320px) */
+@media (max-width: 320px) {
+  .footer {
+    padding: 0.4rem;
+  }
+  
+  .diretorio__links a {
+    font-size: 0.65rem;
+  }
+  
+  .footer__service-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .footer__service-list-item a {
+    font-size: 0.6rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .footer {
+    display: none;
+  }
+}
+.theme-bg-color-primary {
+  background-color: #c4170c;
+}
+/* Theme Hover Effects */
+.theme-hover a {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Ensure SVG icon scales properly */
+.diretorio__logos__logo svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Estrutura básica da página */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Conteúdo principal que deve ter scroll */
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  /* Limita o zoom dentro deste container */
+  touch-action: pan-y;
+  padding-bottom: 1rem; /* Espaço para o footer */
+}
+
+/* Footer fixo no final */
+footer {
+  flex-shrink: 0;
+  margin-top: auto; /* Garante que fique no final */
+}
+
+/* Previne scroll horizontal indesejado */
+* {
+  max-width: 100%;
+}
+
+/* Remove margens do body que podem causar espaço em branco */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Garante que o conteúdo principal ocupe o espaço disponível */
+html, body {
+  height: 100%;
+}
+
+/* Adiciona um pouco de padding ao conteúdo para não ficar colado */
+.container {
+  padding: 1rem;
+  padding-bottom: 0.5rem; /* Menor padding na parte inferior */
+}
+
+/* Para telas grandes, um pouco mais de espaço */
+@media (min-width: 769px) {
+  .main-content {
+    padding-bottom: 2rem;
+  }
+  
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+
+/*============================*/
+
+
+
+
+/* Versão minimalista */
+#go-typebot {
+  width: 70vw;
+  height: 50px;
+  background-color: #c4170c;
+  color: white;
+  border: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+}
+
+#go-typebot:hover {
+  background-color: #6d0d06;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#go-typebot:active {
+  transform: translateY(0);
+}
+
+/* Responsivo minimalista */
+@media (max-width: 768px) {
+  #go-typebot {
+    width: 70vw;
+    height: 50px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  #go-typebot {
+    width: 70vw;
+    height: 50px;
+    font-size: 22px;
+  }
+}
