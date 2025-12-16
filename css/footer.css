@@ -5,6 +5,9 @@
 .glbbarrawidget {
     display: none;
 }
+#glbbarrawidget {
+    display: none;
+}
 .footer {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   padding: 1rem 0.75rem; /* Reduzido o padding */
